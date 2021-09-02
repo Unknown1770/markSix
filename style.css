@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+:root {
+    --primary-color: #ffdd00;
+    --primary-text-color: #040405;
+    --secondary-text-color: #07090ab4;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+    background-image: url(img/pic3.png);
+    background-size: contain;
+}
+
+.navbar {
+    background-color: #e0ee1f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 8.5vh;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    padding: 0 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbrand {
+    font-size: 1.5rem;
+}
+
+main {
+    padding-top: 10vh;
+    height: 80vh;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 25vw;
+}
+
+h1 {
+    color: var(--primary-text-color);
+}
+
+#input {
+    border-radius: 10px;
+    width: 20%;
+    height: 15vh;
+    padding: 1rem;
+    border: 2px solid #6B7280;
+    display: block;
+    margin: .7rem auto;
+}
+
+button {
+    width: auto;
+    height: 80px;
+    border-radius: 50%;
+    border: solid #6B7280;
+}
+
+button:active {
+    border: solid #374151;
+}
+
+#output {
+    width: 20%;
+    height: 15vh;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid #6B7280;
+    display: block;
+    margin: 1rem auto;
+    background-color: #F9FAFB;
+}
+
+footer {
+    background-color: #e0ee1f;
+    height: 9.35vh;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: .7rem;
+    transform: translateX(1rem) translateY(-.8rem);
+}
+
+@media screen and (min-width: 768px) {
+    footer p {
+        transform: translateX(1rem) translateY(-.8rem);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    a {
+        font-size: .9rem;
+    }
+    footer section {
+        transform: translateY(-.6rem);
+    }
+}
